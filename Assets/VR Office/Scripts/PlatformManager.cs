@@ -20,7 +20,7 @@ namespace ChiliGames.VROffice
         [SerializeField] private GameObject vrBody;
         private VRBody localVrBody;
 
-        [HideInInspector] public Transform[] vrRigParts;
+        public Transform[] vrRigParts;
         public Transform[] screenRigParts;
 
         [SerializeField] GameObject screenBody;
@@ -61,10 +61,11 @@ namespace ChiliGames.VROffice
                 Screen.sleepTimeout = SleepTimeout.NeverSleep;
             }
 
-            vrRigParts = new Transform[3];
+            vrRigParts = new Transform[4];
             vrRigParts[0] = vrRig.transform.GetChild(0).GetChild(0); //Set camera
             vrRigParts[1] = vrRig.transform.GetChild(0).GetChild(1); //Set left hand
             vrRigParts[2] = vrRig.transform.GetChild(0).GetChild(2); //Set right hand
+            vrRigParts[3] = vrRig.transform; //Set body
 
             floor.teleportationProvider = vrRig.GetComponent<TeleportationProvider>();
         }
@@ -100,7 +101,11 @@ namespace ChiliGames.VROffice
 
         void CreateVRBody()
         {
-            localVrBody = PhotonNetwork.Instantiate(vrBody.name, transform.position, transform.rotation).GetComponent<VRBody>();
+            localVrBody = PhotonNetwork.Instantiate(vrBody.name, vrRig.transform.position, vrRig.transform.rotation).GetComponent<VRBody>();
+
+            XRControllerMovement xrc = vrRig.GetComponent<XRControllerMovement>();
+            xrc.headPosition = localVrBody.HeadPosition;
+            localVrBody.HeadPosition.parent = vrRig.transform;
         }
 
         public void SetMaleAvatar()
@@ -172,13 +177,13 @@ namespace ChiliGames.VROffice
             Debug.Log("Spawning user in position number: " + n);
             if (mode == Mode.VR)
             {
-                vrRig.transform.position = startingPositions[n].position;
-                vrRig.transform.rotation = startingPositions[n].rotation;
+                //vrRig.transform.position = startingPositions[n].position;
+                //vrRig.transform.rotation = startingPositions[n].rotation;
             }
             else if(mode == Mode.VR)
             {
-                screenRig.transform.position = startingPositions[n].position;
-                screenRig.transform.rotation = startingPositions[n].rotation;
+                //screenRig.transform.position = startingPositions[n].position;
+                //screenRig.transform.rotation = startingPositions[n].rotation;
             }
             seated = true;
 

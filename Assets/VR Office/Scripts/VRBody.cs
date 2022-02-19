@@ -14,6 +14,8 @@ namespace ChiliGames.VROffice
         [SerializeField] SkinnedMeshRenderer rHand;
         [SerializeField] SkinnedMeshRenderer bodyRenderer;
         [SerializeField] GameObject HeadModel;
+        [SerializeField] public Transform HeadPosition;
+        [SerializeField] public Avatar avatar;
 
         private Color playerColor;
 
@@ -26,8 +28,8 @@ namespace ChiliGames.VROffice
             //Enable hand renderers if this is my avatar. (will save these for when we need to test)
             if (pv.IsMine)
             {
-                //lHand.enabled = true;
-                //rHand.enabled = true;
+                lHand.enabled = true;
+                rHand.enabled = true;
                 HeadModel.SetActive(false);
                 //hide head if is player
 

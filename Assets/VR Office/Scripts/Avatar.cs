@@ -25,8 +25,11 @@ namespace ChiliGames.VROffice
         public VRMap head;
         public VRMap leftHand;
         public VRMap rightHand;
+        public VRMap body;
 
+        public Transform Controller;
         public Transform headConstraint;
+        public Transform bodyConstraint;
         Vector3 headBodyOffset;
         private float turnSmoothness = 3f;
 
@@ -45,12 +48,15 @@ namespace ChiliGames.VROffice
         {
             //Lerp our avatar's forward from the head's forward vector projected on the Y/Up plane.
             //this part making the body rotation weird, must fix
-            transform.position = headConstraint.position + headBodyOffset;
-            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.forward, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
+            //transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.forward, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
+
+            Controller.transform.rotation = Quaternion.Euler(0, headConstraint.rotation.eulerAngles.y, 0);
+            Controller.transform.position = bodyConstraint.position;
 
             head.Map();
             leftHand.Map();
             rightHand.Map();
+            body.Map();
         }
     }
 }
