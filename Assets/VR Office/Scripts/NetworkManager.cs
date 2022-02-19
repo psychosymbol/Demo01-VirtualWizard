@@ -66,9 +66,9 @@ namespace ChiliGames.VROffice
 
             triesToConnectToRoom = true;
 
-            //We create a new room with the given options: 10 player max and to not delete cache when leaving, so we keep what's been already drawed on whiteboards.
+            //We create a new room with the given options: 20 player max and to not delete cache when leaving, so we keep what's been already drawed on whiteboards.
             RoomOptions options = new RoomOptions();
-            options.MaxPlayers = 10;
+            options.MaxPlayers = 20;
             PhotonNetwork.JoinOrCreateRoom("VROffice", options, null);
 
         }
@@ -79,7 +79,7 @@ namespace ChiliGames.VROffice
             base.OnJoinedRoom();
             Debug.Log("Master: " + PhotonNetwork.IsMasterClient + " | Players In Room: " + PhotonNetwork.CurrentRoom.PlayerCount + " | RoomName: " + PhotonNetwork.CurrentRoom.Name + " Region: " + PhotonNetwork.CloudRegion);
             
-            SceneManager.LoadScene("Office"); //go to the room scene
+            SceneManager.LoadScene("TestScene"); //go to the room scene
         }
 
         public override void OnJoinRandomFailed(short returnCode, string message)
@@ -87,7 +87,7 @@ namespace ChiliGames.VROffice
             base.OnJoinRandomFailed(returnCode, message);
             //no room available
             //create a room (null as a name means "does not matter")
-            PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = 15 });
+            PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = 20 });
         }
     }
 }

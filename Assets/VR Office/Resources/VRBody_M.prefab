@@ -6612,6 +6612,8 @@ GameObject:
   - component: {fileID: 439039574550161775}
   - component: {fileID: 3709360231261719604}
   - component: {fileID: 6531913682218210030}
+  - component: {fileID: 1810255722368673779}
+  - component: {fileID: 4137422024226763508}
   m_Layer: 0
   m_Name: Man_rig_blendHand
   m_TagString: Untagged
@@ -6648,7 +6650,7 @@ Animator:
   m_GameObject: {fileID: 5507132271806701016}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5ca5d4cb2fae6148af404f2237968f5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6692,6 +6694,10 @@ MonoBehaviour:
   Controller: {fileID: 6593754953505912806}
   headConstraint: {fileID: 6137105374826407312}
   bodyConstraint: {fileID: 6398236246154796146}
+  bodyBlendshape: {fileID: 5495876397231107805}
+  faceBlendshape: {fileID: 664717227254885470}
+  animator: {fileID: 7217664261020319018}
+  speaker: {fileID: 3492754367852093237}
 --- !u!114 &3709360231261719604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6749,6 +6755,107 @@ MonoBehaviour:
   - {fileID: 6284311615129954579}
   - {fileID: 7281751375808246281}
   - {fileID: 2751874376443424635}
+--- !u!114 &1810255722368673779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5507132271806701016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 0
+  ObservedComponents:
+  - {fileID: 4137422024226763508}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &4137422024226763508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5507132271806701016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 3
+    SynchronizeType: 0
+    Name: Mouth
+  - Type: 3
+    SynchronizeType: 0
+    Name: EyeR
+  - Type: 3
+    SynchronizeType: 0
+    Name: EyeL
+  - Type: 3
+    SynchronizeType: 0
+    Name: LThumb
+  - Type: 3
+    SynchronizeType: 0
+    Name: LIndex
+  - Type: 3
+    SynchronizeType: 0
+    Name: LMiddle
+  - Type: 3
+    SynchronizeType: 0
+    Name: LRing
+  - Type: 3
+    SynchronizeType: 0
+    Name: LPinky
+  - Type: 3
+    SynchronizeType: 0
+    Name: RThumb
+  - Type: 3
+    SynchronizeType: 0
+    Name: RIndex
+  - Type: 3
+    SynchronizeType: 0
+    Name: RMiddle
+  - Type: 3
+    SynchronizeType: 0
+    Name: RRing
+  - Type: 3
+    SynchronizeType: 0
+    Name: RPinky
+  - Type: 1
+    SynchronizeType: 0
+    Name: LGrip
+  - Type: 1
+    SynchronizeType: 0
+    Name: LPoint
+  - Type: 1
+    SynchronizeType: 0
+    Name: LThumbin
+  - Type: 1
+    SynchronizeType: 0
+    Name: RGrip
+  - Type: 1
+    SynchronizeType: 0
+    Name: RPoint
+  - Type: 1
+    SynchronizeType: 0
+    Name: RThumbin
+  - Type: 1
+    SynchronizeType: 0
+    Name: Walk
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!1 &5552327881547244329
 GameObject:
   m_ObjectHideFlags: 0
@@ -8154,7 +8261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7406677571082122034}
   m_LocalRotation: {x: -0, y: -0, z: 0.29276717, w: 0.9561838}
-  m_LocalPosition: {x: 0.49983805, y: 1.4403398, z: -0.185}
+  m_LocalPosition: {x: 0.49983805, y: 1.264711, z: -0.06800002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3191110906392910417}
@@ -8644,7 +8751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8215420860623297950}
   m_LocalRotation: {x: -0, y: -0, z: -0.29185882, w: 0.9564615}
-  m_LocalPosition: {x: -0.49980825, y: 1.4396288, z: -0.185}
+  m_LocalPosition: {x: -0.49980825, y: 1.264, z: -0.068}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3539057794964649426}

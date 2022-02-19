@@ -1262,7 +1262,17 @@ SkinnedMeshRenderer:
   - {fileID: 8363125882742763863}
   - {fileID: 9218644029646240031}
   - {fileID: 3797307672111393736}
-  m_BlendShapeWeights: []
+  m_BlendShapeWeights:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   m_RootBone: {fileID: 3697665703094208731}
   m_AABB:
     m_Center: {x: 0.0001219213, y: -0.1486434, z: 0.009158924}
@@ -1436,7 +1446,7 @@ MonoBehaviour:
   voiceDetectionThreshold: 0.01
   voiceDetectionDelayMs: 500
   unityMicrophoneDevice: Microphone (USB Audio Device)
-  photonMicrophoneDeviceId: 0
+  photonMicrophoneDeviceId: -1
   interestGroup: 0
   debugEchoMode: 0
   reliableMode: 0
@@ -2577,7 +2587,10 @@ SkinnedMeshRenderer:
   m_Bones:
   - {fileID: 3797307672111393736}
   - {fileID: 2730194230240417905}
-  m_BlendShapeWeights: []
+  m_BlendShapeWeights:
+  - 0
+  - 0
+  - 0
   m_RootBone: {fileID: 2730194230240417905}
   m_AABB:
     m_Center: {x: 0, y: 0.2933877, z: 0.013391152}
@@ -2808,6 +2821,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4064499442914077839}
   - component: {fileID: 6293454733562444051}
+  - component: {fileID: 4500161900149590970}
+  - component: {fileID: 7239930153316265435}
   - component: {fileID: 4645969084549537722}
   - component: {fileID: 4291728623217056754}
   - component: {fileID: 3832417313120967277}
@@ -2847,7 +2862,7 @@ Animator:
   m_GameObject: {fileID: 3685017730040919605}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 37f10a19e9d890041a3f6b6462b86d4a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2856,6 +2871,109 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4500161900149590970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3685017730040919605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 0
+  ObservedComponents:
+  - {fileID: 7239930153316265435}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &7239930153316265435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3685017730040919605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 3
+    SynchronizeType: 1
+    Name: Mouth
+  - Type: 3
+    SynchronizeType: 1
+    Name: EyeR
+  - Type: 3
+    SynchronizeType: 1
+    Name: EyeL
+  - Type: 3
+    SynchronizeType: 1
+    Name: LThumb
+  - Type: 3
+    SynchronizeType: 1
+    Name: LIndex
+  - Type: 3
+    SynchronizeType: 1
+    Name: LMiddle
+  - Type: 3
+    SynchronizeType: 1
+    Name: LRing
+  - Type: 3
+    SynchronizeType: 1
+    Name: LPinky
+  - Type: 3
+    SynchronizeType: 1
+    Name: RThumb
+  - Type: 3
+    SynchronizeType: 1
+    Name: RIndex
+  - Type: 3
+    SynchronizeType: 1
+    Name: RMiddle
+  - Type: 3
+    SynchronizeType: 1
+    Name: RRing
+  - Type: 3
+    SynchronizeType: 1
+    Name: RPinky
+  - Type: 1
+    SynchronizeType: 1
+    Name: LGrip
+  - Type: 1
+    SynchronizeType: 1
+    Name: LPoint
+  - Type: 1
+    SynchronizeType: 1
+    Name: LThumbin
+  - Type: 1
+    SynchronizeType: 2
+    Name: RGrip
+  - Type: 1
+    SynchronizeType: 2
+    Name: RPoint
+  - Type: 1
+    SynchronizeType: 2
+    Name: RThumbin
+  - Type: 1
+    SynchronizeType: 2
+    Name: Walk
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
+  - SynchronizeType: 0
+    LayerIndex: 1
 --- !u!114 &4645969084549537722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2907,6 +3025,10 @@ MonoBehaviour:
   Controller: {fileID: 6593754953505912806}
   headConstraint: {fileID: 6137105374826407312}
   bodyConstraint: {fileID: 6398236246154796146}
+  bodyBlendshape: {fileID: 8274480793916352057}
+  faceBlendshape: {fileID: 7847087987457556996}
+  animator: {fileID: 6293454733562444051}
+  speaker: {fileID: 3492754367852093237}
 --- !u!114 &3832417313120967277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7888,8 +8010,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7406677571082122034}
-  m_LocalRotation: {x: -0, y: -0, z: 0.29276717, w: 0.9561838}
-  m_LocalPosition: {x: 0.49983805, y: 1.4403398, z: -0.185}
+  m_LocalRotation: {x: -0.00000023147733, y: -0.000016979322, z: 0.000027616394, w: 1}
+  m_LocalPosition: {x: 0.365, y: 1.053, z: -0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3191110906392910417}
@@ -8193,8 +8315,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8215420860623297950}
-  m_LocalRotation: {x: -0, y: -0, z: -0.29185882, w: 0.9564615}
-  m_LocalPosition: {x: -0.49980825, y: 1.4396288, z: -0.185}
+  m_LocalRotation: {x: 0.000000045933124, y: 0.000016660286, z: -0.0000138569985, w: 1}
+  m_LocalPosition: {x: -0.36554793, y: 1.0530008, z: -0.050000668}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3539057794964649426}

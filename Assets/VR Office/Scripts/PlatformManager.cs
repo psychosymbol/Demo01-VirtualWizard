@@ -119,6 +119,7 @@ namespace ChiliGames.VROffice
 
             XRControllerMovement xrc = vrRig.GetComponent<XRControllerMovement>();
             xrc.headPosition = localVrBody.HeadPosition;
+            xrc.targetAnim = localVrBody.avatar.animator;
             localVrBody.HeadPosition.parent = vrRig.transform;
         }
 
