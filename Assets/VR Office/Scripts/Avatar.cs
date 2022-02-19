@@ -38,6 +38,10 @@ namespace ChiliGames.VROffice
         Vector3 headBodyOffset;
         private float turnSmoothness = 3f;
 
+        private float lerp = 0;
+        private float duration = 0.8f;
+        private Vector3 endPos;
+
         int mouth = 0;
         int eye = 0;
 
@@ -59,12 +63,23 @@ namespace ChiliGames.VROffice
             //Lerp our avatar's forward from the head's forward vector projected on the Y/Up plane.
             //this part making the body rotation weird, must fix
             //transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.forward, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
-
+            
             Controller.transform.rotation = Quaternion.Euler(0, headConstraint.rotation.eulerAngles.y, 0);
-            Controller.transform.position = bodyConstraint.position;
+
+            if (Controller.transform.position != endPos)
+            {
+                lerp += Time.deltaTime / duration; // Tune duration between 0.8 - 1
+                Controller.transform.position = Vector3.Lerp(Controller.transform.position, endPos, lerp);
+            }
+            else
+            {
+                lerp = 0;
+                endPos = bodyConstraint.position;
+            }
+
 
             //blendshape talk
-            if(speaker.IsPlaying)
+            if (speaker.IsPlaying)
             {
                 if (mouth == 0)
                 {

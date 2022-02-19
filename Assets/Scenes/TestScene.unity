@@ -430,7 +430,7 @@ MonoBehaviour:
   - {fileID: 506889416}
   screenBody: {fileID: 2176608843384903841, guid: 38c35990c8a71d844b4037e4e8104c8e, type: 3}
   mode: 0
-  modelType: 1
+  modelType: 0
   onSpawned:
     m_PersistentCalls:
       m_Calls: []
