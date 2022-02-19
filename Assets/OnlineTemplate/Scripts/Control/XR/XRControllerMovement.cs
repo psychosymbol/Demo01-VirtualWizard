@@ -91,10 +91,10 @@ public class XRControllerMovement : MonoBehaviour
 
 
             //hand blendshape
-            targetAnim.SetFloat("LPoint", LTrigger);
-            targetAnim.SetFloat("RPoint", RTrigger);
-            targetAnim.SetFloat("LGrip", LGrip);
-            targetAnim.SetFloat("RGrip", RGrip);
+            targetAnim.SetFloat("LPoint", LTrigger * 100);
+            targetAnim.SetFloat("RPoint", RTrigger * 100);
+            targetAnim.SetFloat("LGrip", LGrip * 100);
+            targetAnim.SetFloat("RGrip", RGrip * 100);
             //hand blendshape
 
         }
