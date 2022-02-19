@@ -18,6 +18,8 @@ namespace ChiliGames.VROffice
         [SerializeField] TeleportationArea floor;
 
         [SerializeField] private GameObject vrBody;
+        [SerializeField] private GameObject vrBodyM;
+        [SerializeField] private GameObject vrBodyF;
         private VRBody localVrBody;
 
         public Transform[] vrRigParts;
@@ -33,8 +35,11 @@ namespace ChiliGames.VROffice
 
         //Modes
         public enum Mode { VR, Screen };
+        public enum ModelType { M, F };
         [Tooltip("Choose the mode before building")]
         public Mode mode;
+        [Tooltip("Choose the mode before building")]
+        public ModelType modelType;
 
         //For setting color in VRBody.cs
         public UnityEvent onSpawned;
@@ -101,7 +106,16 @@ namespace ChiliGames.VROffice
 
         void CreateVRBody()
         {
-            localVrBody = PhotonNetwork.Instantiate(vrBody.name, vrRig.transform.position, vrRig.transform.rotation).GetComponent<VRBody>();
+            switch (modelType)
+            {
+                case ModelType.M:
+                default:
+                    localVrBody = PhotonNetwork.Instantiate(vrBodyM.name, vrRig.transform.position, vrRig.transform.rotation).GetComponent<VRBody>();
+                    break;
+                case ModelType.F:
+                    localVrBody = PhotonNetwork.Instantiate(vrBodyF.name, vrRig.transform.position, vrRig.transform.rotation).GetComponent<VRBody>();
+                    break;
+            }
 
             XRControllerMovement xrc = vrRig.GetComponent<XRControllerMovement>();
             xrc.headPosition = localVrBody.HeadPosition;

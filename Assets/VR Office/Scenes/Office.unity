@@ -567,6 +567,8 @@ MonoBehaviour:
   - {fileID: 342950647}
   floor: {fileID: 1342491464}
   vrBody: {fileID: 2176608843384903841, guid: 370071b949a1c4f428a15ac5937ec403, type: 3}
+  vrBodyM: {fileID: 2176608843384903841, guid: 370071b949a1c4f428a15ac5937ec403, type: 3}
+  vrBodyF: {fileID: 2176608843384903841, guid: 83d7e87aae4b36244b2b39151b56b30d, type: 3}
   vrRigParts:
   - {fileID: 6246618557707893773}
   - {fileID: 6246618556307038356}
@@ -576,6 +578,7 @@ MonoBehaviour:
   - {fileID: 506889416}
   screenBody: {fileID: 2176608843384903841, guid: 38c35990c8a71d844b4037e4e8104c8e, type: 3}
   mode: 0
+  modelType: 0
   onSpawned:
     m_PersistentCalls:
       m_Calls: []
