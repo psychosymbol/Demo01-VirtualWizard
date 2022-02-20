@@ -2970,7 +2970,7 @@ MonoBehaviour:
     SynchronizeType: 2
     Name: Walk
   m_SynchronizeLayers:
-  - SynchronizeType: 0
+  - SynchronizeType: 2
     LayerIndex: 0
   - SynchronizeType: 0
     LayerIndex: 1
