@@ -39,7 +39,7 @@ namespace ChiliGames.VROffice
         private float turnSmoothness = 3f;
 
         private float lerp = 0;
-        private float duration = 0.8f;
+        private float duration = 1f;
         private Vector3 endPos;
 
         int mouth = 0;
@@ -73,7 +73,7 @@ namespace ChiliGames.VROffice
             }
             else
             {
-                lerp = 0;
+                lerp = Time.deltaTime / duration;
                 endPos = bodyConstraint.position;
             }
 
