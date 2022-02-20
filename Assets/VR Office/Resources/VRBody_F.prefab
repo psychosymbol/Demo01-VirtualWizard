@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3677942603473534571}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandMiddle4
+  m_Name: character_Ctrl:LeftHandMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8082807380314043678}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftToeBase
+  m_Name: character_Ctrl:LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1006083127219623134}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandThumbEffector
+  m_Name: character_Ctrl:RightHandThumbEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3164388786773160549}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftFoot
+  m_Name: character_Ctrl:LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,7 +246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3959436402347250084}
   m_Layer: 0
-  m_Name: character_Ctrl_RightShoulderEffector
+  m_Name: character_Ctrl:RightShoulderEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -365,7 +365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 533738573539133586}
   m_Layer: 0
-  m_Name: character_Ctrl_RightArm
+  m_Name: character_Ctrl:RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,7 +427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5878626521890428355}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandThumbEffector
+  m_Name: character_Ctrl:LeftHandThumbEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -457,7 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1473185003456649101}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandRing3
+  m_Name: character_Ctrl:RightHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -488,7 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4971278693426363659}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandRing2
+  m_Name: character_Ctrl:LeftHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -550,7 +550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7565311576028116246}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandPinkyEffector
+  m_Name: character_Ctrl:RightHandPinkyEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -580,7 +580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1203381626269284495}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandRing4
+  m_Name: character_Ctrl:RightHandRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -610,7 +610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7406117533583085244}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandPinky3
+  m_Name: character_Ctrl:RightHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -641,7 +641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3560992044658640846}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandIndexEffector
+  m_Name: character_Ctrl:LeftHandIndexEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -671,7 +671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4435395551724196840}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftWristEffector
+  m_Name: character_Ctrl:LeftWristEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -701,7 +701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3670291176358268349}
   m_Layer: 0
-  m_Name: character_Ctrl_RightFoot
+  m_Name: character_Ctrl:RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -732,7 +732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4258245287498028353}
   m_Layer: 0
-  m_Name: character_Ctrl_RightWristEffector
+  m_Name: character_Ctrl:RightWristEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -793,7 +793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3764463916124272732}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandThumb1
+  m_Name: character_Ctrl:RightHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -885,7 +885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4978912201287673175}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandMiddle4
+  m_Name: character_Ctrl:RightHandMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -915,7 +915,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8947034345191796090}
   m_Layer: 0
-  m_Name: character_Ctrl_HipsEffector
+  m_Name: character_Ctrl:HipsEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -945,7 +945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8411455102964593796}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftUpLeg
+  m_Name: character_Ctrl:LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1006,7 +1006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1077715340186367935}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandThumb2
+  m_Name: character_Ctrl:RightHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1070,7 +1070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8289413791395963945}
   m_Layer: 0
-  m_Name: character_Ctrl_Spine1
+  m_Name: character_Ctrl:Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1101,7 +1101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 113796016664742403}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftAnkleEffector
+  m_Name: character_Ctrl:LeftAnkleEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1288,7 +1288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7147409905083107424}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftShoulderEffector
+  m_Name: character_Ctrl:LeftShoulderEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1318,7 +1318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4263585167039010510}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandIndex3
+  m_Name: character_Ctrl:LeftHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1666,7 +1666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2049057255270163274}
   m_Layer: 0
-  m_Name: character_Ctrl_ChestOriginEffector
+  m_Name: character_Ctrl:ChestOriginEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1696,7 +1696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4997146498848633927}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandRingEffector
+  m_Name: character_Ctrl:RightHandRingEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1726,7 +1726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3846879068023193888}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandRing1
+  m_Name: character_Ctrl:LeftHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1757,7 +1757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4561725579832095864}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandPinky3
+  m_Name: character_Ctrl:LeftHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1788,7 +1788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2616448364416197314}
   m_Layer: 0
-  m_Name: character_Ctrl_ChestEndEffector
+  m_Name: character_Ctrl:ChestEndEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1818,7 +1818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 619262476934774063}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandRingEffector
+  m_Name: character_Ctrl:LeftHandRingEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1940,7 +1940,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3004285938695037679}
   m_Layer: 0
-  m_Name: character_Ctrl_RightElbowEffector
+  m_Name: character_Ctrl:RightElbowEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2118,7 +2118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5228353047652813473}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandRing2
+  m_Name: character_Ctrl:RightHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2180,7 +2180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2641406623737281107}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandRing3
+  m_Name: character_Ctrl:LeftHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2211,7 +2211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1421321527166612632}
   m_Layer: 0
-  m_Name: character_Ctrl_Spine2
+  m_Name: character_Ctrl:Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2244,7 +2244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2945379677389977253}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandThumb2
+  m_Name: character_Ctrl:LeftHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2336,7 +2336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8211184048295953318}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandMiddle2
+  m_Name: character_Ctrl:LeftHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2606,7 +2606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530893038774102543}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandMiddle1
+  m_Name: character_Ctrl:RightHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2667,7 +2667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1406884096117794488}
   m_Layer: 0
-  m_Name: character_Ctrl_RightLeg
+  m_Name: character_Ctrl:RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2790,7 +2790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4152982094403288556}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandRing1
+  m_Name: character_Ctrl:RightHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3080,7 +3080,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6189736990432618427}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHipEffector
+  m_Name: character_Ctrl:RightHipEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3110,7 +3110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6160559536364620280}
   m_Layer: 0
-  m_Name: character_Ctrl_RightUpLeg
+  m_Name: character_Ctrl:RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3207,7 +3207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9052483498130769918}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandThumb1
+  m_Name: character_Ctrl:LeftHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3268,7 +3268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2597997096428638985}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftFootEffector
+  m_Name: character_Ctrl:LeftFootEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3359,7 +3359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7445254516081243820}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHipEffector
+  m_Name: character_Ctrl:LeftHipEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3508,7 +3508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2893365987855865214}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftKneeEffector
+  m_Name: character_Ctrl:LeftKneeEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3569,7 +3569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1726426432059721189}
   m_Layer: 0
-  m_Name: character_Ctrl_RightForeArm
+  m_Name: character_Ctrl:RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3600,7 +3600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9020634123930931498}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandMiddleEffector
+  m_Name: character_Ctrl:RightHandMiddleEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3630,7 +3630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7069673463958297700}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandIndex4
+  m_Name: character_Ctrl:RightHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3660,7 +3660,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7734792729695803654}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftForeArm
+  m_Name: character_Ctrl:LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3722,7 +3722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3971387271128045974}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandPinky4
+  m_Name: character_Ctrl:RightHandPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3783,7 +3783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8954077617221155126}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandIndex1
+  m_Name: character_Ctrl:LeftHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3959,7 +3959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5130123275624210631}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandIndexEffector
+  m_Name: character_Ctrl:RightHandIndexEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4020,7 +4020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 758619842240000122}
   m_Layer: 0
-  m_Name: character_Ctrl_RightFootEffector
+  m_Name: character_Ctrl:RightFootEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4050,7 +4050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6814275353797655872}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandRing4
+  m_Name: character_Ctrl:LeftHandRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4111,7 +4111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5102037272173896166}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHand
+  m_Name: character_Ctrl:RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4146,7 +4146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268806559374023711}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandPinky4
+  m_Name: character_Ctrl:LeftHandPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4238,7 +4238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3448985171465991917}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandThumb3
+  m_Name: character_Ctrl:RightHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6588,7 +6588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7279954051624938489}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandMiddle2
+  m_Name: character_Ctrl:RightHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6619,7 +6619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7359498449080765076}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandThumb4
+  m_Name: character_Ctrl:LeftHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6764,7 +6764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4058218583093179412}
   m_Layer: 0
-  m_Name: character_Ctrl_Hips
+  m_Name: character_Ctrl:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6828,7 +6828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1705534097151471382}
   m_Layer: 0
-  m_Name: character_Ctrl_Reference
+  m_Name: character_Ctrl:Reference
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6949,7 +6949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4340753579588543609}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandIndex2
+  m_Name: character_Ctrl:LeftHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7011,7 +7011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1330315969885631810}
   m_Layer: 0
-  m_Name: character_Ctrl_RightKneeEffector
+  m_Name: character_Ctrl:RightKneeEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7218,7 +7218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1454627879457995712}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandPinky2
+  m_Name: character_Ctrl:RightHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7249,7 +7249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7394084969744259411}
   m_Layer: 0
-  m_Name: character_Ctrl_RightToeBase
+  m_Name: character_Ctrl:RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7310,7 +7310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7313412113791974778}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandPinky1
+  m_Name: character_Ctrl:RightHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7535,7 +7535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6599959813245449016}
   m_Layer: 0
-  m_Name: character_Ctrl_Spine
+  m_Name: character_Ctrl:Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7783,7 +7783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6695015276614442717}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandMiddle1
+  m_Name: character_Ctrl:LeftHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7845,7 +7845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 973452494383220302}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftElbowEffector
+  m_Name: character_Ctrl:LeftElbowEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7875,7 +7875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832692777899436242}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandIndex4
+  m_Name: character_Ctrl:LeftHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7905,7 +7905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5824331277952402486}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandPinkyEffector
+  m_Name: character_Ctrl:LeftHandPinkyEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7966,7 +7966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 664773417555706102}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandPinky2
+  m_Name: character_Ctrl:LeftHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8087,7 +8087,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8219230252651524523}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandThumb4
+  m_Name: character_Ctrl:RightHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8241,7 +8241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3499446943323503401}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandIndex2
+  m_Name: character_Ctrl:RightHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8272,7 +8272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5956619528405568121}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandMiddleEffector
+  m_Name: character_Ctrl:LeftHandMiddleEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8396,7 +8396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2930001995015635523}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandMiddle3
+  m_Name: character_Ctrl:LeftHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8563,7 +8563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7605611623202662915}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandThumb3
+  m_Name: character_Ctrl:LeftHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8625,7 +8625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6883234173154840900}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftShoulder
+  m_Name: character_Ctrl:LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8656,7 +8656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3946860731995173007}
   m_Layer: 0
-  m_Name: character_Ctrl_HeadEffector
+  m_Name: character_Ctrl:HeadEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8757,7 +8757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6256102836380929732}
   m_Layer: 0
-  m_Name: character_Ctrl_RightAnkleEffector
+  m_Name: character_Ctrl:RightAnkleEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8822,7 +8822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2341444213326444325}
   m_Layer: 0
-  m_Name: character_Ctrl_RightShoulder
+  m_Name: character_Ctrl:RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8853,7 +8853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6665666043931207770}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftLeg
+  m_Name: character_Ctrl:LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8884,7 +8884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 988751365341580864}
   m_Layer: 0
-  m_Name: character_Ctrl_Head
+  m_Name: character_Ctrl:Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9016,7 +9016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2695370327057198944}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHand
+  m_Name: character_Ctrl:LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9051,7 +9051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6361384169472216973}
   m_Layer: 0
-  m_Name: character_Ctrl_Neck
+  m_Name: character_Ctrl:Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9082,7 +9082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7182955077863367640}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftArm
+  m_Name: character_Ctrl:LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9174,7 +9174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5424014414725531719}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandIndex1
+  m_Name: character_Ctrl:RightHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9205,7 +9205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5507193715109928167}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandMiddle3
+  m_Name: character_Ctrl:RightHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9236,7 +9236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6669539528021412877}
   m_Layer: 0
-  m_Name: character_Ctrl_RightHandIndex3
+  m_Name: character_Ctrl:RightHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9267,7 +9267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3844992527275497521}
   m_Layer: 0
-  m_Name: character_Ctrl_LeftHandPinky1
+  m_Name: character_Ctrl:LeftHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -10,6 +10,9 @@ public class naming : MonoBehaviour
 
     void Start()
     {
+        part_of_the_oldName = "character_Ctrl_";
+        part_of_the_newName = "character_Ctrl:";
+
         if (transform.name.Contains(part_of_the_oldName))
             transform.name = transform.name.Replace(part_of_the_oldName, part_of_the_newName);
 
