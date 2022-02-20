@@ -6794,67 +6794,67 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters:
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: Mouth
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: EyeR
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: EyeL
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: LThumb
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: LIndex
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: LMiddle
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: LRing
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: LPinky
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: RThumb
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: RIndex
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: RMiddle
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: RRing
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: RPinky
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: LGrip
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: LPoint
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: LThumbin
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: RGrip
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: RPoint
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: RThumbin
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: Walk
   m_SynchronizeLayers:
-  - SynchronizeType: 0
+  - SynchronizeType: 2
     LayerIndex: 0
 --- !u!1 &5552327881547244329
 GameObject:
