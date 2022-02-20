@@ -69,11 +69,13 @@ namespace ChiliGames.VROffice
             if (Controller.transform.position != endPos)
             {
                 lerp += Time.deltaTime / duration; // Tune duration between 0.8 - 1
+                lerp = (endPos.y < 0) ? lerp * 2f : lerp;
                 Controller.transform.position = Vector3.Lerp(Controller.transform.position, endPos, lerp);
             }
             else
             {
                 lerp = Time.deltaTime / duration;
+                lerp = (endPos.y < 0) ? lerp * 2f : lerp;
                 endPos = bodyConstraint.position;
             }
 
