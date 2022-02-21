@@ -12,20 +12,27 @@ namespace ChiliGames.VROffice
     //This script handles the different modes: VR or Screen (pc, tablet, phone, etc)
     public class PlatformManager : MonoBehaviourPunCallbacks
     {
-        [SerializeField] GameObject vrRig;
-        public GameObject screenRig;
+        //Room Setting
         [SerializeField] Transform[] startingPositions;
         [SerializeField] TeleportationArea floor;
 
+        //VR
+        [SerializeField] GameObject vrRig;
+        public Transform[] vrRigParts;
         [SerializeField] private GameObject vrBody;
         [SerializeField] private GameObject vrBodyM;
         [SerializeField] private GameObject vrBodyF;
         private VRBody localVrBody;
 
-        public Transform[] vrRigParts;
+        //Mobile
         public Transform[] screenRigParts;
-
+        public GameObject screenRig;
         [SerializeField] GameObject screenBody;
+
+        //PC
+        public GameObject PCRig;
+        public Transform[] PCRigParts;
+        [SerializeField] GameObject PCBody;
 
         //Seats
         Hashtable h = new Hashtable();
@@ -34,10 +41,12 @@ namespace ChiliGames.VROffice
         int actorNum;
 
         //Modes
-        public enum Mode { VR, Screen };
-        public enum ModelType { M, F };
+        public enum Mode { VR, Screen, PC };
         [Tooltip("Choose the mode before building")]
         public Mode mode;
+
+        //Model type(For now)
+        public enum ModelType { M, F };
         [Tooltip("Choose the mode before building")]
         public ModelType modelType;
 
@@ -66,13 +75,15 @@ namespace ChiliGames.VROffice
                 Screen.sleepTimeout = SleepTimeout.NeverSleep;
             }
 
+            //for VR only
             vrRigParts = new Transform[4];
             vrRigParts[0] = vrRig.transform.GetChild(0).GetChild(0); //Set camera
             vrRigParts[1] = vrRig.transform.GetChild(0).GetChild(1); //Set left hand
             vrRigParts[2] = vrRig.transform.GetChild(0).GetChild(2); //Set right hand
             vrRigParts[3] = vrRig.transform; //Set body
 
-            floor.teleportationProvider = vrRig.GetComponent<TeleportationProvider>();
+            floor.teleportationProvider = vrRig.GetComponent<TeleportationProvider>(); //unused
+            //for VR only
         }
 
         private void Start()
@@ -97,6 +108,15 @@ namespace ChiliGames.VROffice
             {
                 screenRig.SetActive(true);
                 CreateScreenBody();
+                if (PhotonNetwork.CurrentRoom.CustomProperties["Initialized"] != null)
+                {
+                    SetPosition(GetFreePosition());
+                }
+            }//if it's a student, create it's body and sit in right position if the student list already exists
+            else if (mode == Mode.PC)
+            {
+                screenRig.SetActive(true);
+                CreatePCBody();
                 if (PhotonNetwork.CurrentRoom.CustomProperties["Initialized"] != null)
                 {
                     SetPosition(GetFreePosition());
@@ -137,7 +157,12 @@ namespace ChiliGames.VROffice
 
         void CreateScreenBody()
         {
-            PhotonNetwork.Instantiate(screenBody.name, transform.position, transform.rotation);
+            PhotonNetwork.Instantiate(screenBody.name, screenRig.transform.position, screenRig.transform.rotation);
+        }
+
+        void CreatePCBody()
+        {
+            PhotonNetwork.Instantiate(PCBody.name,  PCRig.transform.position, PCRig.transform.rotation);
         }
 
         public void TeleportEffect()
