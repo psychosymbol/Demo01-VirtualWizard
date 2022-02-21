@@ -67,6 +67,7 @@ public class CameraController : MonoBehaviour
         //mouseY = Input.GetAxis("Mouse Y") * mouseSensitive * Time.deltaTime;
 
         pcControl.Player.RightMouse.performed += _ => EnableCameraMovement();
+        pcControl.Player.RightMouse.canceled += _ => DisableCameraMovement();
 
         if (isEnableCemaraMove)
         {
@@ -76,7 +77,7 @@ public class CameraController : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(isEnableCemaraMove)
+        if (isEnableCemaraMove)
         {
             HandleAllCameraMovement();
         }
@@ -84,16 +85,24 @@ public class CameraController : MonoBehaviour
 
     private void EnableCameraMovement()
     {
-        isEnableCemaraMove = !isEnableCemaraMove;
-        Cursor.visible = !isEnableCemaraMove;
+        isEnableCemaraMove = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void DisableCameraMovement()
+    {
+        isEnableCemaraMove = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     private void HandleMouseInput()
     {
         mouseDelta = pcControl.Player.Look.ReadValue<Vector2>();
 
-        mouseX += mouseDelta.x * mouseSensitive;
-        mouseY += mouseDelta.y * mouseSensitive;
+        mouseX = mouseDelta.x * mouseSensitive * Time.deltaTime;
+        mouseY = mouseDelta.y * mouseSensitive * Time.deltaTime;
     }
 
 

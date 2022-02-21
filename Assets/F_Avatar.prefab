@@ -123,6 +123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1353683902094965540}
+  - component: {fileID: 1284566932385995634}
   m_Layer: 0
   m_Name: CameraHolder
   m_TagString: Untagged
@@ -145,6 +146,40 @@ Transform:
   m_Father: {fileID: 1353683902182418566}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1284566932385995634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353683902094965541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb2ab9dcfca9fc479bcc255c571a6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTransform: {fileID: 1353683902182418566}
+  cameraPivot: {fileID: 1353683901270565602}
+  cameraTransform: {fileID: 1353683901462057790}
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  cameraCollisionOffSet: 0.2
+  minimumCollisionOffSet: 0.2
+  cameraCollisionRadius: 2
+  cameraFollowSpeed: 0.2
+  cameraLookSpeed: 2
+  cameraPivotSpeed: 2
+  lookAngle: 0
+  pivotAngle: 0
+  minimumPivotAngle: -35
+  maximumPivotAngle: 35
+  mouseSensitive: 5
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
+  mouseDelta: {x: 0, y: 0}
 --- !u!1 &1353683902182418575
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1353683902182418566
 Transform:
   m_ObjectHideFlags: 0
@@ -207,7 +242,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353683902182418575}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 586a7abacb7111040a76729c14b2762a, type: 3}
   m_Name: 
@@ -261,7 +296,7 @@ MonoBehaviour:
   voiceDetectionThreshold: 0.01
   voiceDetectionDelayMs: 500
   unityMicrophoneDevice: Headset Microphone (Oculus Virtual Audio Device)
-  photonMicrophoneDeviceId: -1
+  photonMicrophoneDeviceId: 0
   interestGroup: 0
   debugEchoMode: 0
   reliableMode: 0

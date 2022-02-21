@@ -494,6 +494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: F_Avatar
       objectReference: {fileID: 0}
+    - target: {fileID: 1353683902182418575, guid: e9dfe29fe8b552d4ab6c2cc6b050a60b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1353683902951190496, guid: e9dfe29fe8b552d4ab6c2cc6b050a60b, type: 3}
       propertyPath: sceneViewId
       value: 5
@@ -562,6 +566,10 @@ PrefabInstance:
     - target: {fileID: 3221658614303194942, guid: 57ecca2e94f50e346b07b323daf2ab9a, type: 3}
       propertyPath: m_Name
       value: M_Avatar
+      objectReference: {fileID: 0}
+    - target: {fileID: 3221658614303194942, guid: 57ecca2e94f50e346b07b323daf2ab9a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57ecca2e94f50e346b07b323daf2ab9a, type: 3}

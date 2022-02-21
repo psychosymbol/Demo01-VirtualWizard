@@ -44,24 +44,13 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
-        pcControl.Player.RightMouse.performed += _ => EnableCameraMovement();
-        pcControl.Player.RightMouse.canceled += _ => EnableCameraMovement();
-
-        if (isEnableCemaraMove)
-        {
-            HandleRotation();
-        }
+        HandleRotation();
         // Read the mouse input axis
         //rotationX += Input.GetAxis("Mouse X") * sensitivityX;
         //rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
 
     }
 
-    private void EnableCameraMovement()
-    {
-        isEnableCemaraMove = !isEnableCemaraMove;
-        Cursor.visible = !isEnableCemaraMove;
-    }
 
     public static float ClampAngle(float angle, float min, float max)
     {

@@ -62,13 +62,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3221658614303194942}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 586a7abacb7111040a76729c14b2762a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivityX: 0.1
-  sensitivityY: 0.1
+  sensitivityX: 0.5
+  sensitivityY: 0.5
   minimumX: -360
   maximumX: 360
   minimumY: -60
@@ -116,7 +116,7 @@ MonoBehaviour:
   voiceDetectionThreshold: 0.01
   voiceDetectionDelayMs: 500
   unityMicrophoneDevice: Headset Microphone (Oculus Virtual Audio Device)
-  photonMicrophoneDeviceId: -1
+  photonMicrophoneDeviceId: 0
   interestGroup: 0
   debugEchoMode: 0
   reliableMode: 0
@@ -376,6 +376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3777138322378380208}
+  - component: {fileID: 578092999975778108}
   m_Layer: 0
   m_Name: CameraHolder
   m_TagString: Untagged
@@ -398,6 +399,40 @@ Transform:
   m_Father: {fileID: 3221658614303194928}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &578092999975778108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6006327366792801282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb2ab9dcfca9fc479bcc255c571a6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTransform: {fileID: 3221658614303194928}
+  cameraPivot: {fileID: 3862312626324638606}
+  cameraTransform: {fileID: 929568911343198855}
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  cameraCollisionOffSet: 0.2
+  minimumCollisionOffSet: 0.2
+  cameraCollisionRadius: 2
+  cameraFollowSpeed: 0.2
+  cameraLookSpeed: 2
+  cameraPivotSpeed: 2
+  lookAngle: 0
+  pivotAngle: 0
+  minimumPivotAngle: -35
+  maximumPivotAngle: 35
+  mouseSensitive: 5
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
+  mouseDelta: {x: 0, y: 0}
 --- !u!1 &7162637665749063815
 GameObject:
   m_ObjectHideFlags: 0
