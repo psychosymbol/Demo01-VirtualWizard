@@ -51,6 +51,7 @@ public class XRControllerMovement : MonoBehaviour
         //movement
         moveInput = xrControl.XRILeftHand.Move.ReadValue<Vector2>();
         characterForward.rotation = Quaternion.Euler(0, head.rotation.eulerAngles.y, 0); //this will make our character move forward to where we're looking
+        //moveSpeed = (moveInput.y < 0) ? .125f : .5f;
         transform.Translate(characterForward.forward * moveInput.y * moveSpeed * Time.deltaTime);
         transform.Translate(characterForward.right * moveInput.x * moveSpeed * Time.deltaTime);
         //movement
