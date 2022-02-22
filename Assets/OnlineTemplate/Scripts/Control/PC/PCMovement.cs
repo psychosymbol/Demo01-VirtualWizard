@@ -31,6 +31,7 @@ public class PCMovement : MonoBehaviour
     {
         pcControl.Player.Run.performed += _ => Run(true);
         pcControl.Player.Run.canceled += _ => Run(false);
+
     }
 
     private void FixedUpdate()
@@ -53,4 +54,11 @@ public class PCMovement : MonoBehaviour
         animator.SetBool("Run", isRun);
         moveSpeed = isRun ? 1.5f : .5f;
     }
+
+    public void ChangeCamera(Transform camera)
+    {
+        HeadCamera = camera;
+    }
+
+
 }

@@ -1,4 +1,5 @@
-﻿using Photon.Pun;
+﻿using Cinemachine;
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class CameraController : MonoBehaviour
 {
     private PCControl pcControl;
 
+    public ThirdPersonController thirdPersonController;
     public Transform targetTransform;
     public Transform cameraPivot;
     public Transform cameraTransform;
@@ -41,7 +43,6 @@ public class CameraController : MonoBehaviour
 
     public Vector2 mouseDelta;
 
-
     private void Awake()
     {
         pcControl = new PCControl();
@@ -66,8 +67,8 @@ public class CameraController : MonoBehaviour
         //mouseX = Input.GetAxis("Mouse X") * mouseSensitive * Time.deltaTime;
         //mouseY = Input.GetAxis("Mouse Y") * mouseSensitive * Time.deltaTime;
 
-        pcControl.Player.RightMouse.performed += _ => EnableCameraMovement();
-        pcControl.Player.RightMouse.canceled += _ => DisableCameraMovement();
+        pcControl.Player.Aim.performed += _ => EnableCameraMovement();
+        pcControl.Player.Aim.canceled += _ => DisableCameraMovement();
 
         if (isEnableCemaraMove)
         {
@@ -88,6 +89,7 @@ public class CameraController : MonoBehaviour
         isEnableCemaraMove = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        //thirdPersonController.EnableAimCamera();
     }
 
     private void DisableCameraMovement()
@@ -95,6 +97,7 @@ public class CameraController : MonoBehaviour
         isEnableCemaraMove = false;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        //thirdPersonController.DisableAimCamera();
     }
 
     private void HandleMouseInput()
@@ -160,5 +163,11 @@ public class CameraController : MonoBehaviour
 
         cameraVectorPosition.z = Mathf.Lerp(cameraTransform.localPosition.z, targetPosition, 0.2f);
         cameraTransform.localPosition = cameraVectorPosition;
+    }
+
+    public void ChangeCamera(Transform camera, Transform pivot)
+    {
+        cameraTransform = camera;
+        cameraPivot = pivot;
     }
 }
