@@ -92,19 +92,53 @@ public class PCOffline : MonoBehaviour
 
     private void Jump()
     {
-        Debug.Log($"Jump: {isJump} | Grounded: {isGrounded}");
+        //use invoke to cancel jump instead cuz we not gonna use physics right now
+        if(!isJump)
+        {
+            isJump = true;
+            isGrounded = false;
+            Invoke("Grounded", Time.deltaTime * 20/*(jump frame)*/);
+            targetAnim.SetBool("Jump", isJump);
+        }
+        /*Debug.Log($"Jump: {isJump} | Grounded: {isGrounded}");
         if(!isJump && isGrounded && jumpTime > jumpDelay)
         {
             Debug.LogWarning("JUMP!!!");
             isJump = true;
             isGrounded = false;
             targetAnim.SetBool("Jump", isJump);
-        }
+        }*/
+    }
+
+    public void Grounded()
+    {
+        isJump = false;
+        isGrounded = true;
+        targetAnim.SetBool("Jump", isJump);
     }
 
     private void DelayJump()
     {
         if (!isJump)
         { jumpTime += 1 * Time.deltaTime; }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.name == "TeleportReady")
+        {
+            if(OfflineSceneManager.localInstance)
+            {
+                OfflineSceneManager.localInstance.ReadyToWarp = true;
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.name == "TeleportReady")
+        {
+            OfflineSceneManager.localInstance.ReadyToWarp = false;
+        }
     }
 }
