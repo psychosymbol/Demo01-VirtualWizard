@@ -5,7 +5,7 @@ using UnityEngine;
 public class PCMovement : MonoBehaviour
 {
     private PCControl pcControl;
-    [SerializeField] private Animator animator;
+    public Animator targetAnim;
 
     Vector2 moveInput;
 
@@ -41,16 +41,19 @@ public class PCMovement : MonoBehaviour
     public void HandleMovement()
     {
         moveInput = pcControl.Player.Move.ReadValue<Vector2>();
+        if (moveInput.x != 0 || moveInput.y != 0)
+        {
+            transform.rotation = Quaternion.Euler(0, HeadCamera.rotation.eulerAngles.y, 0);
+        }
         transform.Translate(new Vector3(moveInput.x, 0, moveInput.y) * moveSpeed * Time.deltaTime);
-        transform.rotation = Quaternion.Euler(0, HeadCamera.rotation.eulerAngles.y, 0);
 
-        animator.SetFloat("XAxis", moveInput.x);
-        animator.SetFloat("YAxis", moveInput.y);
+        targetAnim.SetFloat("XAxis", moveInput.x);
+        targetAnim.SetFloat("YAxis", moveInput.y);
     }
 
     private void Run(bool isRun)
     {
-        animator.SetBool("Run", isRun);
+        targetAnim.SetBool("Run", isRun);
         moveSpeed = isRun ? 1.5f : .5f;
     }
 }

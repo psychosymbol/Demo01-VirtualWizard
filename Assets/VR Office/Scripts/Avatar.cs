@@ -55,7 +55,7 @@ namespace ChiliGames.VROffice
                 //GetComponentInChildren<SkinnedMeshRenderer>().enabled = false;
             }
 
-            Invoke("blink", Random.Range(3f, 6f));
+            Invoke("blink", Random.Range(6f, 15f));
         }
 
         void Update()
@@ -130,13 +130,13 @@ namespace ChiliGames.VROffice
             
             if(eye > 0)
             {
-                eye--;
+                eye-=5;
                 Invoke("blink", Time.deltaTime);
             }
             else if (eye <= 0)
             {
                 eye = 0;
-                Invoke("blink", Random.Range(3f, 6f));
+                Invoke("blink", Random.Range(6f, 15f));
             }
 
         }

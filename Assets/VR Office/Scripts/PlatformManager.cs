@@ -27,12 +27,15 @@ namespace ChiliGames.VROffice
         //Mobile
         public Transform[] screenRigParts;
         public GameObject screenRig;
-        [SerializeField] GameObject screenBody;
+        public GameObject screenBody;
 
         //PC
         public GameObject PCRig;
         public Transform[] PCRigParts;
-        [SerializeField] GameObject PCBody;
+        public GameObject PCbody;
+        public GameObject MPCbody;
+        public GameObject FPCbody;
+        private PCBody LocalPCbody;
 
         //Seats
         Hashtable h = new Hashtable();
@@ -115,7 +118,7 @@ namespace ChiliGames.VROffice
             }//if it's a student, create it's body and sit in right position if the student list already exists
             else if (mode == Mode.PC)
             {
-                screenRig.SetActive(true);
+                PCRig.SetActive(true);
                 CreatePCBody();
                 if (PhotonNetwork.CurrentRoom.CustomProperties["Initialized"] != null)
                 {
@@ -162,7 +165,18 @@ namespace ChiliGames.VROffice
 
         void CreatePCBody()
         {
-            PhotonNetwork.Instantiate(PCBody.name,  PCRig.transform.position, PCRig.transform.rotation);
+            switch (modelType)
+            {
+                case ModelType.M:
+                default:
+                    LocalPCbody = PhotonNetwork.Instantiate(MPCbody.name, PCRig.transform.position, PCRig.transform.rotation).GetComponent<PCBody>();
+                    break;
+                case ModelType.F:
+                    LocalPCbody = PhotonNetwork.Instantiate(FPCbody.name, PCRig.transform.position, PCRig.transform.rotation).GetComponent<PCBody>();
+                    break;
+            }
+            PCMovement pcm = PCRig.GetComponent<PCMovement>();
+            pcm.targetAnim = LocalPCbody.bodyAnim;
         }
 
         public void TeleportEffect()
